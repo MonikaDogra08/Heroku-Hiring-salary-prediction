@@ -32,8 +32,9 @@ def predict():
     # this return is somthing we r returning from flask to html so in html need to use  jinja formate {{}}
     return render_template('base2.html', Prediction_text = f"Employee Salary will be ${output}")
 
-app.run(debug =True)
+
+if __name__ == '__main__':
+    app.run(debug =True)
 
 
-# Now to make this app public so that anyone can use this
-# we will deploy it on cloud env. : heroku,AWS .
+ 
